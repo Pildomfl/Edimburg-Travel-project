@@ -7,6 +7,10 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/headerpic.jpg");
@@ -16,13 +20,13 @@ header {
   text-align: center;
   justify-items: center;
   padding: 200px 0;
-  opacity: 0.6px;
+  opacity: 0.8;
 }
 h1 {
   font-size: 96px;
   font-weight: 700;
   line-height: 1;
-  letter-spacing: 3px;
+  letter-spacing: 5px;
   margin: 30px 0;
 }
 h2 {
@@ -44,16 +48,54 @@ header a {
   margin-top: 36px;
   display: inline-block;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   background-color: lightgrey;
   text-decoration: none;
   color: #272044;
 }
-footer {
-  letter-spacing: 2px;
+section {
+  max-width: 1200px;
+  margin: 0 auto;
 }
+footer {
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/images/headerimg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  opacity: 0.8;
+  padding: 80px 0;
+}
+footer h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+footer li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  list-style: none;
+}
+footer p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
 
-@media (max-width: 900px) {
+  margin-right: 18px;
+}
+footer a {
+  color: white;
+  opacity: 0.7;
+}
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }

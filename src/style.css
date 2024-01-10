@@ -1,12 +1,72 @@
-h1 {
+body {
   font-family: "Nanum Gothic Coding", monospace;
-  font-size: 96px;
-  font-weight: 700;
-  line-height: 144px;
+  background-color: #3a4042;
   text-align: center;
 }
-p {
-  font-family: "Nanum Gothic Coding", monospace;
-  font-size: 40px;
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/headerpic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
   text-align: center;
+  justify-items: center;
+  padding: 200px 0;
+  opacity: 0.6px;
+}
+h1 {
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 3px;
+  margin: 30px 0;
+}
+h2 {
+  font-size: 40px;
+  line-height: 1.5;
+}
+h3 {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: 5px;
+}
+header a {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  padding: 18px 32px;
+  border-radius: 10px;
+  margin-top: 36px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: lightgrey;
+  text-decoration: none;
+  color: #272044;
+}
+footer {
+  letter-spacing: 2px;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 60px 0;
+  }
+
+  header h1 {
+    font-size: 48px;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
 }

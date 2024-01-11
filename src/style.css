@@ -10,6 +10,7 @@ body {
 .grid {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 64px;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -88,8 +89,6 @@ footer p {
   line-height: 24px;
   letter-spacing: 0px;
   text-align: left;
-
-  margin-right: 18px;
 }
 footer a {
   color: white;

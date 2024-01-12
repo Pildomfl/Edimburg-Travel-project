@@ -154,6 +154,17 @@ section.secondary {
 .text-center {
   text-align: center;
 }
+.gallery-image {
+  grid-gap: 20px;
+  border-radius: 30px;
+  filter: grayscale(100%);
+  opacity: 0.75;
+}
+
+.gallery-image:hover {
+  filter: none;
+  transition: all 250ms ease-in-out;
+}
 footer {
   color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
